@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h2>Create an Account</h2>
+  <form action="/create_process" method="post">
+    <p><input type="text" name="ID" placeholder="ID"><input type="button" value="중복확인"></p> <!--중복확인필요-->
+    <P><!--중복확인결과 나타내기--></P>
+    <p><input type="text" name="Password" placeholder="Password"></p>
+    <p><input type="text" name="Name" placeholder="Name"></p>
+    <p><input type="text" name="Gender" placeholder="Gender"></p>
+    <p><input type="text" name="Age" placeholder="Age"></p>
+    <p><input type="text" name="Height" placeholder="Height"/><input type="text" name="Weight" placeholder="Weight"/></p>
+    <!--cm, kg 표시 나타내기-->
+    <p>
+        <input type="submit" value="Register">
+        <!--데이터베이스에 정보 등록하고 회원가입 축하 창 띄우고 Login 페이지로 이동-->
+    </p>
+  </form>
+  <p>Or</p>
+  <p>Already have an account?<a href="Login.html">Login</a></p>
+</body>
+</html>
